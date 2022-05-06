@@ -1,0 +1,223 @@
+/* Селектор цветов через переменные */
+:root {
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --secondary-background-color: #2F303A;
+    --our-team-color: #F5F4FA;
+}
+
+/* Настраиваю глобальный тег Body */
+body {
+    color: var(--secondary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+/* Задаю цвет текста для ссылок title*/
+.title {
+    color: var(--title-text-color);
+}
+/* Для всех список прятаю точки */
+.list {
+    list-style: none;
+}
+
+/* Шапка сайта */
+.logo {
+    color: var(--title-text-color);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+.logo-web {
+    color: var(--accent-color);
+}
+
+.header-class {
+    background-color: var(--primary-text-color);
+}
+
+.site-nav-list:hover,
+.site-nav-list:focus {
+    color: var(--accent-color);
+}
+
+.site-nav-list,
+.contact-header-list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.contact-header-list {
+    color: var(--secondary-text-color);
+}
+
+.contact-header-list:hover,
+.contact-header-list:focus {
+    color: var(--accent-color);
+}
+
+/* Наша команда*/
+/* Секция героя */
+.section-title {
+    color: var(--primary-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    /* or 136% */
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.section-hero {
+    background-color: var(--secondary-background-color);
+}
+
+.accent-button {
+    background-color: var(--accent-color);
+    color: var(--primary-text-color);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+/* Секция Особенности */
+/* hiding h2 */
+.our-features {
+    display: none;
+}
+
+.feature-list {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.feature-text {
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+}
+
+/* Секция Чем мы занимаемся? */
+.title.about-us {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+/* Наша команда */
+
+.name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    /* identical to box height */
+    text-align: center;
+}
+
+.section-our-team {
+    background-color: var(--our-team-color);
+}
+
+.position-name {
+    font-size: 16px;
+    line-height: 1.18;
+    /* identical to box height */
+    text-align: center;
+}
+
+
+
+/* Footer */
+.contact-footer-list {
+    color: var(--primary-text-color);
+    font-style: normal;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.contact-footer-list:hover,
+.contact-footer-list:focus {
+    color: var(--accent-color);
+}
+
+.footer-back {
+    background-color: var(--secondary-background-color);
+}
+
+.logo-studio{
+    color: var(--primary-text-color);
+}
+.email, .phone{
+    opacity: 0.6;
+}
+
+
+
+/*  */
+/* Portfolio Page */
+/*  */
+
+/* Скрываю H1 */
+.portfolio-h1 {
+    display: none;
+}
+
+/* Buttons Selector */
+.button-name{
+    background-color: var(--our-team-color);
+    color: var(--title-text-color);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    /* identical to box height, or 162% */
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Buttong Hover and Focus */
+.button-name:hover,
+.button-name:focus,
+.title.current {
+    color: var(--primary-text-color);
+    background-color: var(--accent-color);
+}
+
+.link{
+    text-decoration: none;
+}
+
+.project-name {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    /* identical to box height, or 200% */
+
+    letter-spacing: 0.06em;
+}
+
+.project-type {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    /* identical to box height, or 188% */
+}
