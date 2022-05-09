@@ -11,29 +11,39 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
     <header class="header-class">
-      <nav>
-        <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
-        <ul class="site-nav list">
-          <li>
-            <a href="./index.html" class="site-nav-list title">Студия</a>
+      <div class="container main-header">
+        <nav class="main-nav">
+          <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="./index.html" class="site-nav-list title">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="site-nav-list title current">Портфолио</a>
+            </li>
+            <li class="item">
+              <a href="" class="site-nav-list title">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact-header list">
+          <li class="item">
+            <a href="mailto:info@example.com" class="contact-header-list">info@example.com</a>
           </li>
-          <li>
-            <a href="./portfolio.html" class="site-nav-list title current">Портфолио</a>
-          </li>
-          <li>
-            <a href="" class="site-nav-list title">Контакты</a>
+          <li class="item">
+            <a href="tel:+380961111111" class="contact-header-list">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="contact-header list">
-        <li><a href="mailto:info@example.com" class="contact-header-list">info@example.com</a></li>
-        <li><a href="tel:+380961111111" class="contact-header-list">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
 
     <!-- Portfolio Main Content -->
@@ -153,12 +163,22 @@
 
     <!-- Подвал -->
     <footer class="footer-back">
-      <a href="./index.html" class="logo"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+      <a href="./index.html" class="logo"
+        ><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a
+      >
       <address>
         <ul class="list">
-          <li><a class="contact-footer-list address" href="" lang="ru">г.Киев пр-т Леси Украинки, 26</a></li>
-          <li><a class="contact-footer-list email" href="mailto:info@example.com">info@example.com</a></li>
-          <li><a class="contact-footer-list phone" href="tel:+380991111111">+38 099 111 11 11</a></li>
+          <li>
+            <a class="contact-footer-list address" href="" lang="ru"
+              >г.Киев пр-т Леси Украинки, 26</a
+            >
+          </li>
+          <li>
+            <a class="contact-footer-list email" href="mailto:info@example.com">info@example.com</a>
+          </li>
+          <li>
+            <a class="contact-footer-list phone" href="tel:+380991111111">+38 099 111 11 11</a>
+          </li>
         </ul>
       </address>
     </footer>

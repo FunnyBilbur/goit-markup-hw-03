@@ -14,14 +14,28 @@ body {
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
 }
+/* Утиилиты */
+/* Для всех списков прятаю точки, удаляю padding & margin */
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1240px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    outline: 2px solid tomato;
+}
+
 
 /* Задаю цвет текста для ссылок title*/
 .title {
     color: var(--title-text-color);
-}
-/* Для всех список прятаю точки */
-.list {
-    list-style: none;
 }
 
 /* Шапка сайта */
@@ -47,6 +61,10 @@ body {
     color: var(--accent-color);
 }
 
+.site-nav-list.title.current{
+    color: var(--accent-color);
+}
+
 .site-nav-list,
 .contact-header-list {
     font-weight: 500;
@@ -54,7 +72,12 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
+
 .contact-header-list {
     color: var(--secondary-text-color);
 }
@@ -64,7 +87,40 @@ body {
     color: var(--accent-color);
 }
 
-/* Наша команда*/
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.main-header .main-nav{
+    display: flex;
+    align-items: center;
+    /* background-color: tomato; */
+}
+
+.main-nav .site-nav{
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+
+}
+
+/* .site-nav .item+.item,
+.contact-header .item+.item {
+    margin-left: 50px;
+} */
+
+.main-header .item+.item{
+    margin-left: 50px;
+}
+
+.main-header .contact-header {
+    display: flex;
+    align-items: center;
+    /* background-color: tomato; */
+}
+
 /* Секция героя */
 .section-title {
     color: var(--primary-text-color);
@@ -76,6 +132,8 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    margin: 0;
 }
 
 .section-hero {
@@ -162,12 +220,29 @@ body {
     background-color: var(--secondary-background-color);
 }
 
-.logo-studio{
+.logo-studio {
     color: var(--primary-text-color);
 }
-.email, .phone{
+
+.email,
+.phone {
     opacity: 0.6;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -181,7 +256,7 @@ body {
 }
 
 /* Buttons Selector */
-.button-name{
+.button-name {
     background-color: var(--our-team-color);
     color: var(--title-text-color);
     border-radius: 4px;
@@ -196,12 +271,12 @@ body {
 /* Buttong Hover and Focus */
 .button-name:hover,
 .button-name:focus,
-.title.current {
+.button-name.title.current {
     color: var(--primary-text-color);
     background-color: var(--accent-color);
 }
 
-.link{
+.link {
     text-decoration: none;
 }
 
