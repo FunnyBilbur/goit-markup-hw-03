@@ -7,6 +7,7 @@
     --secondary-background-color: #2F303A;
     --our-team-color: #F5F4FA;
     --header-border-color: #ECECEC;
+    --portfolio-cards-border-color: #EEEEEE;
 }
 
 /* Настраиваю глобальный тег Body */
@@ -22,6 +23,10 @@ body {
     margin: 0;
     list-style: none;
 }
+/* Для всех линков прятаю прятую нижнее подчеркивание */
+.link {
+    text-decoration: none;
+}
 
 .container{
     margin-left: auto;
@@ -30,7 +35,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 /* Section Settings */
@@ -163,6 +168,8 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: transparent;
 
     padding-top: 10px;
     padding-right: 32px;
@@ -315,19 +322,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*  */
 /* Portfolio Page */
 /*  */
@@ -342,6 +336,7 @@ body {
     background-color: var(--our-team-color);
     color: var(--title-text-color);
     border-radius: 4px;
+    border: transparent;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -358,9 +353,7 @@ body {
     background-color: var(--accent-color);
 }
 
-.link {
-    text-decoration: none;
-}
+
 
 .project-name {
     color: var(--title-text-color);
@@ -370,6 +363,11 @@ body {
     /* identical to box height, or 200% */
 
     letter-spacing: 0.06em;
+
+    margin-top: 0px;
+    margin-right: 24px;
+    margin-bottom: 4px;
+    margin-left: 24px;
 }
 
 .project-type {
@@ -377,4 +375,65 @@ body {
     font-size: 16px;
     line-height: 1.88;
     /* identical to box height, or 188% */
+
+    margin-top: 0px;
+    margin-right: 24px;
+    margin-bottom: 20px;
+    margin-left: 24px;
+
+
 }
+
+.button-list{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+.button-list .item + .item{
+    margin-left: 8px;
+}
+
+.button-list .button-name{
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+}
+
+.project-links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-links .item{
+    /* padding-left: 1px;
+    padding-right: 1px; */
+    border-bottom: 1px solid var(--portfolio-cards-border-color);
+
+}
+
+/* border-left: 1px solid var(--portfolio-cards-border-color);
+border-right: 1px solid var(--portfolio-cards-border-color); */
+
+
+
+.project-links .item:nth-child(3n+2){
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.project-links .item:nth-child(n + 4) {
+    margin-top: 30px;
+}
+
+
+.container.portfolio{
+padding: 0px;
+}
+
+.project-image{
+    margin-bottom: 20px;
+}
+
+/* border: 1px solid */
