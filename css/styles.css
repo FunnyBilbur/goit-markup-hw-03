@@ -6,6 +6,7 @@
     --accent-color: #2196F3;
     --secondary-background-color: #2F303A;
     --our-team-color: #F5F4FA;
+    --header-border-color: #ECECEC;
 }
 
 /* Настраиваю глобальный тег Body */
@@ -60,6 +61,7 @@ body {
 
 .header-class {
     background-color: var(--primary-text-color);
+    border-bottom: 1px solid var(--header-border-color);
 }
 
 .site-nav-list:hover,
