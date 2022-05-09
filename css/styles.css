@@ -25,18 +25,24 @@ body {
 .container{
     margin-left: auto;
     margin-right: auto;
-    width: 1240px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     outline: 2px solid tomato;
 }
 
+/* Section Settings */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 /* Задаю цвет текста для ссылок title*/
 .title {
     color: var(--title-text-color);
 }
+
 
 /* Шапка сайта */
 .logo {
@@ -121,7 +127,15 @@ body {
     /* background-color: tomato; */
 }
 
+
 /* Секция героя */
+.section-hero {
+    text-align: center;
+    background-color: var(--secondary-background-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
 .section-title {
     color: var(--primary-text-color);
     font-weight: 900;
@@ -134,10 +148,7 @@ body {
     text-transform: uppercase;
 
     margin: 0;
-}
-
-.section-hero {
-    background-color: var(--secondary-background-color);
+    margin-bottom: 30px;
 }
 
 .accent-button {
@@ -150,7 +161,14 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+
 }
+
 
 /* Секция Особенности */
 /* hiding h2 */
@@ -158,29 +176,81 @@ body {
     display: none;
 }
 
-.feature-list {
+.feature-title {
+    color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    margin: 0;
+    margin-bottom: 10px;
 }
 
+.feature-list{
+    display: flex;
+    align-items: center;
+}
+
+.feature-list .item + .item{
+    margin-left: 30px;
+}
 .feature-text {
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */
+
+    margin: 0;
 }
+
 
 /* Секция Чем мы занимаемся? */
 .title.about-us {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
+
     text-align: center;
+    margin: 0;
+    margin-bottom: 50px;
 }
 
-/* Наша команда */
+.about-us-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.about-us-list .item +.item {
+    margin-left: 30px;
+}
+.section.about {
+    padding-top: 0px;
+}
+
+
+/* Наша команда */
+.our-team-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.our-team-list .title{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.our-team-list .position-name{
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.our-team-list .item {
+    background-color: var(--primary-text-color);
+}
+
+.our-team-list .item+.item {
+    margin-left: 30px;
+}
 .name {
     font-weight: 500;
     font-size: 16px;
@@ -201,7 +271,6 @@ body {
 }
 
 
-
 /* Footer */
 .contact-footer-list {
     color: var(--primary-text-color);
@@ -218,8 +287,19 @@ body {
 
 .footer-back {
     background-color: var(--secondary-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
+.footer-back .logo{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-address-list .item + .item{
+    display: block;
+    margin-top: 10px;
+}
 .logo-studio {
     color: var(--primary-text-color);
 }
